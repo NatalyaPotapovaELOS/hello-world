@@ -4,11 +4,11 @@ USR=$1
 
 #checks if the number of users is entered
 if [ "$USR" = "0" ]; then
-	echo "Operand nesmi byt 0!"
+	echo "The operand must not be 0!"
 	exit 1;
 	#checks if the number of users is not 0
 	elif [ -z "$1" ]; then
-		echo "Chyby operand"
+		echo "Operand error!"
 		exit 1;
 	else
 
