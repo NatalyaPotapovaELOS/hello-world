@@ -14,6 +14,7 @@ if [ "$USR" = "0" ]; then
 		for (( i = 1; i <= $USR; i++ ))
                 do
                   userdel -r user$USR
+		  rm test.*.log
                   echo "user$USR deleted"
                 done
          exit 0;
